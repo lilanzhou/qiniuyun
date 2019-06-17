@@ -1,0 +1,25 @@
+
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Ryanlee个人博客</title>
+    <meta http-equiv="Content-Type" content="multipart/form-data; charset=utf-8" />
+    <meta charset="UTF-8" />
+
+
+
+</head>
+<body>
+<form action="/fileUpload" method="post" enctype="multipart/form-data">
+    <label>上传图片</label>
+    <input type="file" name="file"/>
+    <input type="submit" value="上传"/>
+</form>
+<p>显示图片:</p>
+
+ <a th:href="index.html" th:if="${filename}">
+    <img style="width: 100px;height: 100px" th:src="@{${filename}}"/>
+</a>
+</body>
+</html>

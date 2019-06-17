@@ -1,0 +1,15 @@
+ spring:
+
+
+  thymeleaf:
+      #check-template-location: true
+    mode: HTML5
+    encoding: utf-8
+    cache: false
+    prefix: classpath:/templates/
+
+#qiniu:
+#  accessKey: gcZiLjZh8vM2gMxD62PqABqXyud2d77ePG30dqme
+#  secretKey: C-QknotS1oGyNOTXpQd-1gtMwBtnQfSjLwgbL4ap
+#  bucket: img
+#  path: http://prp0s2da0.bkt.clouddn.com
